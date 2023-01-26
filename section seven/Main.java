@@ -6,5 +6,6 @@ public class Main {
         Car nissan2 = new Car(nissan);
         nissan2.setColor("Yellow");
 
+        nissan2.drive();
     }
 }
