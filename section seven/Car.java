@@ -24,7 +24,7 @@ public class Car {
     }
 
     public String getMake() {
-        return make;
+        return this.make;
     }
 
     public void setMake(String make) {
@@ -32,7 +32,7 @@ public class Car {
     }
 
     public double getPrice() {
-        return price;
+        return this.price;
     }
 
     public void setPrice(double price) {
@@ -40,7 +40,7 @@ public class Car {
     }
 
     public int getYear() {
-        return year;
+        return this.year;
     }
 
     public void setYear(int year) {
@@ -48,7 +48,7 @@ public class Car {
     }
 
     public String getColor() {
-        return color;
+        return this.color;
     }
 
     public void setColor(String color) {
@@ -56,11 +56,11 @@ public class Car {
     }
 
     public String[] getParts() {
-        return parts;
+        return Arrays.copyOf(this.parts, this.parts.length);
     }
 
     public void setParts(String[] parts) {
-        this.parts = parts;
+        this.parts = Arrays.copyOf(parts, parts.length);
     }
 
     public void drive() {
